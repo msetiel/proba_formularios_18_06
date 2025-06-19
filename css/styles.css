@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+:root {
+    --primary-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --icon-font: "Rye", serif;
+    --primary-color: #3d555a;
+    --secondary-color: #eb8056;
+    --tertiary-color: #e8dab2ce;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--tertiary-color);
+    overflow-x: hidden;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: .5rem;
+    width: 100%;
+}
+
+
+h3 {
+    margin-top: .5rem;
+}
+
+.nav__icon {
+    font-family: var(--icon-font);
+}
+
+.nav__items ul {
+    display: flex;
+    margin-right: 2rem;
+}
+
+li {
+    list-style: none;
+    padding: .8rem;
+    font-size: 1.3rem;
+
+}
+
+li:hover {
+    background-color: #eb8056e0;
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form {
+    padding: 1rem;
+    width: 25%;
+    font-weight: 600;
+    line-height: 1.1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../img/fondo.jpg);
+    height: 100vh;
+    width: 50vw;
+    
+}
+
+.form__question {
+    padding-top: .3rem;
+}
+
+.form__question input {
+    border-radius: 5px;
+    border: none;
+    padding: .3rem;
+    width: 90%;
+    border: 2px solid var(--secondary-color);
+}
+
+
+.form__salario {
+    margin-bottom: .6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+.form__actividade select{
+    border: 2px solid var(--secondary-color);
+} 
+
+.form__presentacion {
+    margin-top: .4rem;
+    padding-top: .4rem;
+}
+
+.form__presentacion textarea{
+    border: 2px solid var(--secondary-color);
+}
+
+.form__actividade {
+    margin-top: .4rem;
+    width: 95%;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin:.3rem;
+}
+
+input[type="radio"]{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin:.3rem;
+}
+
+
+select {
+    border-radius: 5px;
+    border: none;
+    padding: .3rem;
+    width: 95%;
+    margin-bottom: .6rem;
+}
+
+option {
+    border-radius: 5px;
+    border: none;
+    padding: .3rem;
+    width: 95%;
+}
+
+textarea {
+    width: 93%;
+    height: 110px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 95%;
+    display: flex;
+    justify-self: left;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    font: var(--primary-font);
+    background-color: #eb8056;
+    margin-top: .5rem;
+}
+
+button:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+    width: 100%;
+}
+
+
+@media (max-width: 850px) {
+    .content {
+        background-image: none;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    form {
+        background-color: var(--tertiary-color);
+        min-width: 90vw;
+        justify-self: center;
+        padding: 4rem;
+    }
+
+    .nav__items {
+        display: none;
+    }
+
+    footer {
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+    }
+}
+
+@media (max-width:630px){
+    header{
+        background:none;
+        justify-content: center;
+    }
+
+    .nav__icon{
+        color: var(--primary-color);
+        background: none;
+    }
+    .content {
+        background-image: none;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    form {
+        background-color: var(--tertiary-color);
+        min-width: 90vw;
+        justify-self: center;
+        padding: 4rem;
+        overflow: hidden;
+    }
+
+    .nav__items {
+        display: none;
+    }
+
+    footer {
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+    }
+}

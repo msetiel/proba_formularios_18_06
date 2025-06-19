@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para presentarse a un posto de emprego ofrecido por unha libraría">
+    <title>Formulario de empregabilidade</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="nav__icon">
+            <h1>Bookies</h1>
+        </div>
+        <div class="nav__items">
+            <ul>
+                <li class="nav__item">Home</li>
+                <li class="nav__item">Our books</li>
+                <li class="nav__item">Contact</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content">
+            <div class="image"></div>
+        </section>
+
+        <form action="#" id="form">
+            <div class="form__questions">
+                <div class="titulo__form">
+                    <h2>Queres traballar con nós?</h2>
+                    <h3>Deixa a túa solicitude!</h3>
+                </div>
+
+                <div class="form__question">
+                    <label for="nome" >Nome:</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="O teu nome" required aria-required="true" maxlength="32">
+                </div>
+
+                <div class="form__question">
+                    <label for="primeiro__apelido">Primeiro apelido:</label><br>
+                    <input type="text" name="primeiro__apelido" id="primeiro__apelido"
+                        placeholder="O teu primeiro apelido" required aria-required="true" maxlength="32" >
+                </div>
+
+                <div class="form__question">
+                    <label for="segundo__apelido">Segundo apelido:</label><br>
+                    <input type="text" name="segundo__apelido" id="segundo__apelido" placeholder="O teu segundo apelido"
+                        required aria-required="true" maxlength="32" >
+                </div>
+
+                <div class="form__question">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="O teu email" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="email">
+                </div>
+
+                <div class="form__question">
+                    <label for="telefono">Número de teléfono:</label><br>
+                    <input type="tel" name="telefono" id="telefono" placeholder="O teu número de teléfono" required aria-required="true" >
+                </div>
+
+                <div class="form__question">
+                    <label for="nif">NIF:</label><br>
+                    <input type="text" name="nif" id="nif" placeholder="12345678A" pattern="[0-9]{8}[A-Z]" required aria-required="true">
+                </div>
+
+                <div class="form__actividade">
+                    <label for="actividade__profesional">Actividade profesional:</label><br>
+                    <select id="actividade__profesional" aria-required="true" required>
+                        <option value="Seleccionar">Selecionar...</option>
+                        <option value="Asistente administrativo/a">Asistente administrativo/a</option>
+                        <option value="Dependiente/a">Dependiente/a</option>
+                        <option value="Encargado/a de tienda">Encargado/a de tienda</option>
+                        <option value="Organizador/a de eventos">Organizador/a de eventos</option>
+                    </select>
+                </div>
+
+                <div class="form__salario">
+                   <p> Cal é o teu rango salarial?</p><br>
+                    <div>
+                        <input type="radio" name="salario" id="500&euro;">
+                        <label for="500&euro;">500 &euro;/mes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="salario" id="800&euro;">
+                        <label for="800&euro;">800 &euro;/mes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="salario" id="1000&euro;">
+                        <label for="1000&euro;">1000 &euro;/mes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="salario" id="1300&euro;">
+                        <label for="1300&euro;">1300 &euro;/mes</label>
+                    </div>
+                </div>
+
+                <div class="form__mobilidade" required>
+                    <p>Tes dispoñibilidade para desprazarte?</p><br>
+                    <div>
+                        <input type="checkbox" name="dispoñibilidade" id="total">
+                        <label for="total">Total dispoñibilidade.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="dispoñibilidade" id="moderada" >
+                        <label for="moderada">Dispoñibilidade moderada.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="dispoñibilidade" id="nula" >
+                        <label for="nula">Nula dispoñibilidade.</label>
+                    </div>
+                </div>
+
+                <div class="form__presentacion">
+                    <p>Breve presentación:</p><br>
+                    <textarea name="presentacion" id="presentacion__breve" placeholder="Cóntanos sobre ti..." aria-required="true" required></textarea>
+                </div>
+
+                <div class="form__button">
+                    <button class="send" type="submit"  required>
+                        Enviar solicitude
+                    </button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <h4>Bookies &copy;2025</h4>
+    </footer>
+</body>
+
+</html>
