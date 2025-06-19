@@ -16,8 +16,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -31,6 +29,7 @@ header {
 
 h3 {
     margin-top: .5rem;
+    margin-bottom: .3rem;
 }
 
 .nav__icon {
@@ -72,7 +71,7 @@ form {
     flex-direction: column;
     justify-content: space-around;
     background-image: url(../img/fondo.jpg);
-    height: 100vh;
+    height: 110vh;
     width: 50vw;
     
 }
@@ -87,18 +86,18 @@ form {
     padding: .3rem;
     width: 90%;
     border: 2px solid var(--secondary-color);
+    margin-top: .3rem;
 }
-
 
 .form__salario {
     margin-bottom: .6rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
 }
-
 
 .form__actividade select{
     border: 2px solid var(--secondary-color);
+    margin-top:.3rem;
 } 
 
 .form__presentacion {
@@ -111,9 +110,10 @@ form {
 }
 
 .form__actividade {
-    margin-top: .4rem;
+    margin-top: .6rem;
     width: 95%;
 }
+
 
 input[type="checkbox"]{
     display: inline-block;
@@ -147,7 +147,7 @@ option {
 
 textarea {
     width: 93%;
-    height: 110px;
+    height: 100px;
     border: none;
     border-radius: 5px;
 }
@@ -163,6 +163,7 @@ button {
     font: var(--primary-font);
     background-color: #eb8056;
     margin-top: .5rem;
+    transition: all 1s ease-out;
 }
 
 button:hover{
